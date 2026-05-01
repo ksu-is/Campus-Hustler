@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Campus Hustler</title>
+    <title>Campus Hustler | Student Job Board</title>
   </head>
   <body>
     <div class="container top">
@@ -33,15 +33,33 @@
     <div class="column">
       <h1>Campus Hustler</h1>
       <p>Find and post student side hustles, gigs, and services</p>
-    </div>
-    <div class="column is-one-fifth">
-    </div>
+      <p>Welcome to Campus Hustler!</p>
+
+    <h2>Example listings:</h2>
+    <ul>
+      <li>Math tutoring</li>
+      <li>Dog walking</li>
+      <li>Freelance writing</li>
+    </ul>
+
+    <h2>Categories</h2>
+    <ul>
+      <li>Tutoring</li>
+      <li>Pet care</li>
+      <li>Other services</li>
+      <li>Childcare</li>
+      <li>Errands</li>
+    </ul>
   </div>
+
+  <div class="column is-one-fifth">
+  </div>
+</div>
 {% endblock %}
 
 <!-- templates/employer.html -->
 {% block content %}
-  <h2>Jobs</h2>
+  <h2>Campus Jobs & Reviews</h2>
 
   <h2>Reviews</h2>
     {# TODO: Remove comment and add for loop
@@ -69,10 +87,11 @@
 
 <!-- templates/review.html -->
 {% block content %}
-  <h1>New Review</h1>
+  <h1>New Campus Hustler Review</h1>
+  <p>Share your experience with a campus hustle or service.</p>
   <form method="post">
     <div class="field">
-      <label class="label">Job Title</label>
+      <label class="label">Gig or Service Title</label>
       <div class="control">
         <input class="input" type="text" name="title" id="title" required>
       </div>
@@ -98,12 +117,12 @@
       </div>
     </div>
     <div class="field">
-      <label class="label">Employment Status</label>
+      <label class="label">Experience Status</label>
       <div class="control">
         <div class="select">
           <select name="status" id="status">
-            <option value="former">Former</option>
-            <option value="current">Current</option>
+            <option value="former">Completed</option>
+            <option value="current">Currently Working</option>
           </select>
         </div>
       </div>
